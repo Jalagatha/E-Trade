@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/stopC"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg"
+        android:gravity="center|left"
+        android:hint="@string/delivery"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:drawableRightCompat="@drawable/ic_baseline_calendar_month_24"
+        app:layout_constraintEnd_toEndOf="@+id/dateOfOrder"
+        app:layout_constraintStart_toStartOf="@+id/dateOfOrder"
+        app:layout_constraintTop_toBottomOf="@+id/dateOfOrder" />
+
+    <TextView
+        android:id="@+id/dateOfOrder"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg"
+        android:drawableRight="@drawable/ic_baseline_calendar_month_24"
+        android:gravity="center|left"
+        android:hint="@string/order"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/phoneC"
+        app:layout_constraintTop_toBottomOf="@+id/phoneC" />
+
+    <TextView
+        android:id="@+id/phoneC"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg"
+        android:gravity="center|left"
+        android:hint="@string/number"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:drawableRightCompat="@drawable/ic_baseline_phone_enabled_24"
+        app:layout_constraintEnd_toEndOf="@+id/productName"
+        app:layout_constraintStart_toStartOf="@+id/productName"
+        app:layout_constraintTop_toBottomOf="@+id/productName" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg"
+        android:drawableRight="@drawable/saloon"
+        android:gravity="center|left"
+        android:hint="@string/product"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customerC" />
+
+    <TextView
+        android:id="@+id/customerC"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg"
+        android:drawableEnd="@drawable/ic_baseline_person_24"
+        android:gravity="center_vertical"
+        android:hint="@string/customer"
+
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exitC"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/purple"
+
+        android:paddingStart="15dp"
+        android:text="Exit"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/stopC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stopC" />
+</androidx.constraintlayout.widget.ConstraintLayout>

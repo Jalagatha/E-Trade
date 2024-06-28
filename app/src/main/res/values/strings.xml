@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">E-trade</string>
+    <string name="treatment_end_date">Treatment end date</string>
+    <string name="customer">Enter FullNames</string>
+    <string name="pdt">Product</string>
+    <string name="date_order" />
+    <string name="delivery">Delivery Date</string>
+    <string name="order">Date of Order</string>
+    <string name="number">Telephone</string>
+    <string name="product">Product Name</string>
+    <string name="phone">Telephone</string>
+    <string name="confirm">Submit</string>
+</resources>

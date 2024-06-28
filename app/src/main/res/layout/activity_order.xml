@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order">
+
+
+    <TextView
+        android:id="@+id/titleBody"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple"
+        android:gravity="center"
+        android:paddingStart="32dp"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColorHint="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout6"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
+
+        <AutoCompleteTextView
+            android:id="@+id/st"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order"
+            android:inputType="date" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColorHint="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+
+        <AutoCompleteTextView
+            android:id="@+id/en"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:hint="@string/delivery"
+            android:textColorHint="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/purple"
+        android:text="@string/confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout6"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/green"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+        <AutoCompleteTextView
+            android:id="@+id/rs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/product"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:textColorHint="@color/green"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleBody">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/customer" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:textColorHint="@color/green"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:endIconMode="clear_text"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
